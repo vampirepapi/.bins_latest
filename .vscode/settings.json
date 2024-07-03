@@ -11,55 +11,59 @@
     "oracledevtools.connectionConfiguration.walletFileFolder": "C:\\Users\\shubhsou\\Oracle\\network\\admin",
     "oracledevtools.bookmarkFileFolder": "C:\\Users\\shubhsou\\Oracle\\oracle.oracledevtools",
     "oracledevtools.download.otherFolder": "C:\\Users\\shubhsou\\downloads",
-    "http.proxySupport": "on",
-    "window.menuBarVisibility": "toggle",
-    "window.commandCenter": false,
-    "workbench.layoutControl.enabled": false,
-    "http.proxyAuthorization": null,
-    // Sets the font size for the editor.
-    "editor.fontSize": 17,
-    "background.editorBackgrounds": [
-        "c:/Users/shubhsou/Downloads/peakpx \\(3\\).jpg"
-    ],
-    "background.panelBackgrounds": [],
-    "background.sidebarBackgrounds": [],
-    "background.backgroundBlur": [
-        "0.9",
-        "5px",
-        "0",
-        "0"
-    ],
-    "editor.minimap.enabled": false,
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": true,
-        "scminput": false
-    },
-    "workbench.activityBar.location": "top",
+      // following 5 properties remove gutter elements, comment/uncomment as per your liking
+  "editor.folding": false, // removes code folding arrows
+  "editor.fontSize": 17,
+  // "editor.lineNumbers": "off", // removes line numbers
+  // "editor.glyphMargin": false, // removes space for symbols like breakpoint, bookmark, hints icons, etc
+  "editor.lineDecorationsWidth": 0, // [undocumented] removes space between editor and line numbers
+  "editor.lineNumbersMinChars": 0, // [undocumented] sets lower limit of line number characters
+  
+  "editor.roundedSelection": false,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorStyle": "block",
+  "workbench.iconTheme": "symbols",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.6,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "breadcrumbs.enabled": false,
+  "editor.scrollbar.horizontalScrollbarSize": 10,
+  "editor.scrollbar.verticalScrollbarSize": 10,
+  "symbols.hidesExplorerArrows": true, // symbols file icons required
+  "window.titleBarStyle": "native",
 
-    "background.autoInstall": false,
-    "window.titleBarStyle": "native",
-    "apc.electron": {
-    "titleBarStyle": "hiddenInset"
-},
-    "window.customTitleBarVisibility": "never",
-    "apc.listRow": {
-        "lists": [
-        "explorer-folders-view",
-        "quick-input-list",
-        "results"
-        ],
-        "height": 20
+  // settings for APC customize UI++ extension
+  "apc.electron": {
+    "titleBarStyle": "hidden",
+    "titleBarOverlay": {
+      "color": "#1e2030",
+      "symbolColor": "#eeffffc0",
+      "height": 32
     },
-    "apc.header": {
-        "compact": 22, // Applied wtih "window.density.editorTabHeight": "compact"
+    "backgroundColor": "#00000000",
+  },
+  "apc.menubar.compact": true,
+  "apc.statusBar": {
+    "height": 28,
+    "position": "editor-bottom",
+  },
+  "apc.sidebar.titlebar": {
+    "height": 30
+  },
+  "apc.listRow": {
+      "lists": [
+      "explorer-folders-view",
+      "quick-input-list",
+      "results"
+      ],
+      "height": 24
     },
-    "window.density.editorTabHeight": "compact",
-    "apc.activityBar": {
-        "size": 42
-      },
-    "apc.stylesheet": {
+  
+  "apc.activityBar": {
+    "size": 42
+  },
+  "apc.font.family": "inter",
+  "apc.stylesheet": {
     // ".editor-actions": "margin: auto 140px auto 0;background: #ffffff0f; height: 26px !important; border-radius: 4px; padding: 0 0 0 4px !important",
     "div.tab[aria-selected='true'] > .tab-border-top-container": "display: block !important; height: 2.5px; width: 100%; position: absolute; left: 0; background: linear-gradient(to right, #06f, #0af); box-shadow: 0 2px 10px #08f; z-index: 10",
     ".tabs-border-bottom::after": "background: transparent !important",
@@ -71,52 +75,39 @@
     
     // moonlight theme text glow, uncomment to add shadow on more tokens text.
     
-    ".mtk1": "text-shadow: 0 0 8px #fff, 0 0 2px black;",
-    ".mtk3": "text-shadow: 0 0 8px #555, 0 0 2px black;",
+    // ".mtk1": "text-shadow: 0 0 8px #fff, 0 0 2px black;",
+    // ".mtk3": "text-shadow: 0 0 8px #555, 0 0 2px black;",
     ".mtk4": "text-shadow: 0 0 8px #df0c, 0 0 3px black;",
-    ".mtk8": "text-shadow: 0 0 8px #a8f, 0 0 3px black;",
-    ".mtk9": "text-shadow: 0 0 8px #6cf, 0 0 3px black;",
+    // ".mtk8": "text-shadow: 0 0 8px #a8f, 0 0 3px black;",
+    // ".mtk9": "text-shadow: 0 0 8px #6cf, 0 0 3px black;",
     ".mtk10": "text-shadow: 0 0 8px #f66, 0 0 3px black;",
     ".mtk11": "text-shadow: 0 0 8px #2f36ff, 0 0 5px #9d91ff80, 0 0 3px black;",
     ".mtk12": "text-shadow: 0 0 8px #12baff, 0 0 3px black;",
     ".mtk13": "text-shadow: 0 0 8px #ff6080, 0 0 3px black;",
     ".mtk14": "text-shadow: 0 0 8px #f85, 0 0 3px black;",
     ".mtk16": "text-shadow: 0 0 8px #6f0, 0 0 3px black;",
-    ".mtk18": "text-shadow: 0 0 8px #879, 0 0 2px black;",
-    ".mtk22": "text-shadow: 0 0 8px #fff, 0 0 2px black;",
+    // ".mtk18": "text-shadow: 0 0 8px #879, 0 0 2px black;",
+    // ".mtk22": "text-shadow: 0 0 8px #fff, 0 0 2px black;",
+  },
+  "workbench.colorTheme": "Moonlight II",
+  "workbench.colorCustomizations": {
+    "editorCursor.background": "#000000",
+    "editorCursor.foreground": "#ff896f",
+    "sideBar.background": "#232639",
   },
   "editor.minimap.renderCharacters": false,
   "window.zoomLevel": -0.3,
   "workbench.tree.indent": 15,
-//   "editor.bracketPairColorization.enabled": false,
-//   "workbench.tree.renderIndentGuides": "always",
+  "editor.minimap.enabled": false,
+  // "editor.bracketPairColorization.enabled": false,
+  // "workbench.tree.renderIndentGuides": "always",
   "workbench.editor.tabSizing": "fixed",
   "workbench.editor.tabSizingFixedMaxWidth": 200,
-//   "editor.guides.indentation": false,
-// "editor.guides.highlightActiveIndentation": false,
-"background.backgroundOpacity": [
-    0.9,
-    0.8,
-    0.9,
-    0.9
-],
-"workbench.productIconTheme": "icons-carbon",
-"background.windowBackgrounds": [],
-"background.backgroundRepeat": [
-    "No Repeat",
-    "No Repeat",
-    "No Repeat",
-    "No Repeat"
-],
-"workbench.colorCustomizations": {
-    // "titleBar.activeBackground": "#333333",
-    // "titleBar.activeForeground": "#CCCCCC",
-    // "activityBar.background": "#333333",
-    // "sideBar.background": "#3b3b3b",
-    // "editor.background": "#1e1e1e",
-    // "editor.foreground": "#f72a2a",
-    // Add more customizations as needed
-},
-"http.proxy": "http://genproxy.amdocs.com:8080",
-"workbench.statusBar.visible": false,
+  // "editor.guides.indentation": false,
+  // "editor.guides.highlightActiveIndentation": false,
+  "window.commandCenter": false,
+  "workbench.activityBar.location": "top",
+  // "http.proxy": "http://genproxy.amdocs.com:8080",
+  "workbench.statusBar.visible": false,
+  "workbench.layoutControl.enabled": false,
 }
