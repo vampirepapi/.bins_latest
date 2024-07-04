@@ -1,113 +1,159 @@
 {
-    "oracledevtools.connectionConfiguration.configFilesFolder": "C:\\Users\\shubhsou\\Oracle\\network\\admin",
-    "[oraclesql]": {
-        "editor.suggest.showSnippets": true,
-        "editor.quickSuggestions": {
-            "comments": "on",
-            "strings": "on",
-            "other": "on"
-        }
+    /**
+     * Minimal Code
+     */
+    "apc.electron": {
+        // Hide the title bar in the Electron app
+        // "titleBarStyle": "hidden",
     },
-    "oracledevtools.connectionConfiguration.walletFileFolder": "C:\\Users\\shubhsou\\Oracle\\network\\admin",
-    "oracledevtools.bookmarkFileFolder": "C:\\Users\\shubhsou\\Oracle\\oracle.oracledevtools",
-    "oracledevtools.download.otherFolder": "C:\\Users\\shubhsou\\downloads",
-      // following 5 properties remove gutter elements, comment/uncomment as per your liking
-  "editor.folding": false, // removes code folding arrows
-  "editor.fontSize": 17,
-  // "editor.lineNumbers": "off", // removes line numbers
-  // "editor.glyphMargin": false, // removes space for symbols like breakpoint, bookmark, hints icons, etc
-  "editor.lineDecorationsWidth": 0, // [undocumented] removes space between editor and line numbers
-  "editor.lineNumbersMinChars": 0, // [undocumented] sets lower limit of line number characters
-  
-  "editor.roundedSelection": false,
-  "editor.cursorBlinking": "phase",
-  "editor.cursorStyle": "block",
-  "workbench.iconTheme": "symbols",
-  "editor.fontLigatures": true,
-  "editor.lineHeight": 1.6,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "breadcrumbs.enabled": false,
-  "editor.scrollbar.horizontalScrollbarSize": 10,
-  "editor.scrollbar.verticalScrollbarSize": 10,
-  "symbols.hidesExplorerArrows": true, // symbols file icons required
-  "window.titleBarStyle": "native",
-
-  // settings for APC customize UI++ extension
-  "apc.electron": {
-    "titleBarStyle": "hidden",
-    "titleBarOverlay": {
-      "color": "#1e2030",
-      "symbolColor": "#eeffffc0",
-      "height": 32
+    "apc.stylesheet": {
+        // Hide the decorations overview ruler
+        ".decorationsOverviewRuler": "display: none;",
+        // Hide the title elements in the editor group container
+        ".editor-group-container .title *": "display: none;",
+        // Make the title elements in the editor group container non-clickable
+        ".editor-group-container .title": "pointer-events: none;",
+        // Allow dragging the empty editor group container
+        ".editor-group-container.empty": "-webkit-app-region: drag;",
+        // Remove the box shadow from the scroll decoration in the Monaco editor
+        ".monaco-editor .scroll-decoration": "box-shadow: none;",
+        // Set the color for the cursor in the Monaco editor 
+        ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #67D0FF 10%, #C45DFF 100%)",
+        "body": {
+            // Other panels have to be transparent for this. See "workbench.colorCustomizations"
+            "background-image": "url(C:/Users/shubhsou/Downloads/peakpxa.jpg), linear-gradient(to top,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2))",
+            "background-size": "cover",
+            "background-blend-mode": "multiply",
+            "background-repeat": "no-repeat"
+        },
     },
-    "backgroundColor": "#00000000",
-  },
-  "apc.menubar.compact": true,
-  "apc.statusBar": {
-    "height": 28,
-    "position": "editor-bottom",
-  },
-  "apc.sidebar.titlebar": {
-    "height": 30
-  },
-  "apc.listRow": {
-      "lists": [
-      "explorer-folders-view",
-      "quick-input-list",
-      "results"
-      ],
-      "height": 24
-    },
-  
-  "apc.activityBar": {
-    "size": 42
-  },
-  "apc.font.family": "inter",
-  "apc.stylesheet": {
-    // ".editor-actions": "margin: auto 140px auto 0;background: #ffffff0f; height: 26px !important; border-radius: 4px; padding: 0 0 0 4px !important",
-    "div.tab[aria-selected='true'] > .tab-border-top-container": "display: block !important; height: 2.5px; width: 100%; position: absolute; left: 0; background: linear-gradient(to right, #06f, #0af); box-shadow: 0 2px 10px #08f; z-index: 10",
-    ".tabs-border-bottom::after": "background: transparent !important",
-    ".monaco-workbench .part.statusbar>.items-container>.statusbar-item.remote-kind": "background: transparent; color: #a7b0f3",
-    ".inline-title-bar:not(.horizontal-activitybar) .monaco-workbench:not(.fullscreen) .activitybar:not(.right) .content": "height: 100% !important; transform: none !important",
-    ".inline-title-bar:not(.horizontal-activitybar) .monaco-workbench div.activitybar.bordered.left .content": "border-right: 1px solid #0003 !important",
-    ".monaco-workbench .activitybar > .content :not(.monaco-menu) > .monaco-action-bar .action-item.checked .active-item-indicator:before": "border: none !important; width: 2.5px; background: linear-gradient(to top, #06f, #0af); box-shadow: 5px 0 15px #08f",
-    ".custom-activitybar:not(.horizontal-activitybar) div.monaco-workbench div.activitybar>div.content div.monaco-action-bar ul.actions-container li.action-item": "margin-top: 0 !important",
-    
-    // moonlight theme text glow, uncomment to add shadow on more tokens text.
-    
-    // ".mtk1": "text-shadow: 0 0 8px #fff, 0 0 2px black;",
-    // ".mtk3": "text-shadow: 0 0 8px #555, 0 0 2px black;",
-    ".mtk4": "text-shadow: 0 0 8px #df0c, 0 0 3px black;",
-    // ".mtk8": "text-shadow: 0 0 8px #a8f, 0 0 3px black;",
-    // ".mtk9": "text-shadow: 0 0 8px #6cf, 0 0 3px black;",
-    ".mtk10": "text-shadow: 0 0 8px #f66, 0 0 3px black;",
-    ".mtk11": "text-shadow: 0 0 8px #2f36ff, 0 0 5px #9d91ff80, 0 0 3px black;",
-    ".mtk12": "text-shadow: 0 0 8px #12baff, 0 0 3px black;",
-    ".mtk13": "text-shadow: 0 0 8px #ff6080, 0 0 3px black;",
-    ".mtk14": "text-shadow: 0 0 8px #f85, 0 0 3px black;",
-    ".mtk16": "text-shadow: 0 0 8px #6f0, 0 0 3px black;",
-    // ".mtk18": "text-shadow: 0 0 8px #879, 0 0 2px black;",
-    // ".mtk22": "text-shadow: 0 0 8px #fff, 0 0 2px black;",
-  },
-  "workbench.colorTheme": "Moonlight II",
-  "workbench.colorCustomizations": {
-    "editorCursor.background": "#000000",
-    "editorCursor.foreground": "#ff896f",
-    "sideBar.background": "#232639",
-  },
-  "editor.minimap.renderCharacters": false,
-  "window.zoomLevel": -0.3,
-  "workbench.tree.indent": 15,
-  "editor.minimap.enabled": false,
-  // "editor.bracketPairColorization.enabled": false,
-  // "workbench.tree.renderIndentGuides": "always",
-  "workbench.editor.tabSizing": "fixed",
-  "workbench.editor.tabSizingFixedMaxWidth": 200,
-  // "editor.guides.indentation": false,
-  // "editor.guides.highlightActiveIndentation": false,
-  "window.commandCenter": false,
-  "workbench.activityBar.location": "top",
-  // "http.proxy": "http://genproxy.amdocs.com:8080",
-  "workbench.statusBar.visible": false,
-  "workbench.layoutControl.enabled": false,
+    // Set the font family for the debug console to JetBrains Mono
+    "debug.console.fontFamily": "JetBrains Mono",
+    // Set the font size for the debug console to 15
+    "debug.console.fontSize": 16,
+    // Set the line height for the debug console to 36
+    "debug.console.lineHeight": 36,
+    // Dock the debug tool bar
+    "debug.toolBarLocation": "docked",
+    // Don't ignore trim whitespace in the diff editor
+    "diffEditor.ignoreTrimWhitespace": false,
+    // Render the diff editor in a side-by-side layout
+    "diffEditor.renderSideBySide": false,
+    // Disable bracket pair colorization in the editor
+    "editor.bracketPairColorization.enabled": false,
+    // Disable color decorators in the editor
+    "editor.colorDecorators": false,
+    // Set the cursor style to a thin line
+    "editor.cursorStyle": "line",
+    // Set the font family for the editor to JetBrains Mono
+    "editor.fontFamily": "JetBrains Mono",
+    // Enable font ligatures in the editor
+    "editor.fontLigatures": true,
+    // Set the font size for the editor to 15
+    "editor.fontSize": 17,
+    // Format the code on save
+    "editor.formatOnSave": true,
+    // Disable the glyph margin in the editor
+    "editor.glyphMargin": false,
+    // Set the behavior for multiple declarations, definitions, implementations, references, and type definitions to "goto"
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleReferences": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+    // Disable indentation guides in the editor
+    "editor.guides.indentation": false,
+    // Hide the cursor in the overview ruler
+    "editor.hideCursorInOverviewRuler": true,
+    // Set the line height for the editor to 36
+    "editor.lineHeight": 32,
+    // Disable line numbers in the editor
+    // "editor.lineNumbers": "off",
+    // Set the match brackets behavior to "near"
+    "editor.matchBrackets": "near",
+    // Disable the minimap in the editor
+    "editor.minimap.enabled": false,
+    // Disable occurrences highlighting in the editor
+    "editor.occurrencesHighlight": "off",
+    // Disable line highlighting in the editor
+    "editor.renderLineHighlight": "none",
+    // Disable whitespace rendering in the editor
+    "editor.renderWhitespace": "none",
+    // Set the horizontal scrollbar size to 8
+    "editor.scrollbar.horizontalScrollbarSize": 8,
+    // Set the vertical scrollbar size to 8
+    "editor.scrollbar.verticalScrollbarSize": 8,
+    // Disable compact folders in the explorer
+    "explorer.compactFolders": false,
+    // Disable decorations badges in the explorer
+    "explorer.decorations.badges": false,
+    // Hide open editors in the explorer
+    "explorer.openEditors.visible": 9,
+    // Enable smart commit in Git
+    "git.enableSmartCommit": true,
+    // Disable confirm sync in Git
+    "git.confirmSync": false,
+    // Disable mark editor selection in Markdown preview
+    "markdown.preview.markEditorSelection": false,
+    // Disable problems decorations
+    "problems.decorations.enabled": false,
+    // Disable diff decorations in SCM
+    "scm.diffDecorations": "none",
+    // Set the cursor style in the terminal to a line
+    "terminal.integrated.cursorStyle": "line",
+    // Disable multi-line paste warning in the terminal
+    "terminal.integrated.enableMultiLinePasteWarning": "auto",
+    // Set the font size for the terminal to 15
+    "terminal.integrated.fontSize": 15,
+    // Set the line height for the terminal to 1.85
+    "terminal.integrated.lineHeight": 1.85,
+    // Auto-detect the color scheme for the window
+    "window.autoDetectColorScheme": true,
+    // Inherit the new window dimensions
+    "window.newWindowDimensions": "inherit",
+    // Set the window title to the root name
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}",
+    // Set the window title bar style to native
+    "window.titleBarStyle": "custom",
+    // Set the color theme to GitHub Light Default
+    "workbench.colorTheme": "GitHub Light Default",
+    // Disable editor preview
+    "workbench.editor.enablePreview": false,
+    // Reveal the editor if it's open
+    "workbench.editor.revealIfOpen": true,
+    // Disable showing tabs in the editor
+    // "workbench.editor.showTabs": "single",
+    // Set the icon theme to null
+    "workbench.iconTheme": "symbols",
+    // Enable horizontal scrolling in the list
+    "workbench.list.horizontalScrolling": true,
+    // Set the preferred dark color theme to GitHub Dark Default
+    "workbench.preferredDarkColorTheme": "GitHub Dark Default",
+    // Set the preferred light color theme to GitHub Light Default
+    "workbench.preferredLightColorTheme": "GitHub Light Default",
+    // Set the startup editor to none
+    "workbench.startupEditor": "none",
+    // Hide the status bar
+    "workbench.statusBar.visible": false,
+    // Disable tips
+    "workbench.tips.enabled": false,
+    // Set the tree indent to 16
+    "workbench.tree.indent": 16,
+    // Disable render indent guides in the tree
+    "workbench.tree.renderIndentGuides": "none",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "window.menuBarVisibility": "toggle",
+    "symbols.hidesExplorerArrows": true,
+    "workbench.editor.editorActionsLocation": "titleBar",
+    "workbench.activityBar.location": "top",
+    "background.editorBackgrounds": [
+        "c:/Users/shubhsou/Downloads/peakpxa.jpg"
+    ],
+    "background.backgroundBlur": [
+        "0",
+        "5px",
+        "0",
+        "0"
+    ]
 }
