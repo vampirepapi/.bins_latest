@@ -19,13 +19,14 @@
         ".monaco-editor .scroll-decoration": "box-shadow: none;",
         // Set the color for the cursor in the Monaco editor 
         ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #67D0FF 10%, #C45DFF 100%)",
-        "body": {
-            // Other panels have to be transparent for this. See "workbench.colorCustomizations"
-            "background-image": "url(C:/Users/shubhsou/Downloads/peakpxa.jpg), linear-gradient(to top,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2))",
-            "background-size": "cover",
-            "background-blend-mode": "multiply",
-            "background-repeat": "no-repeat"
-        },
+        // Set the color for the selection in the Monaco editor
+        // ".monaco-editor .focused .selected-text": "background-color: #67D0FF;",
+        // Set the color for the selection border in the Monaco editor
+        // ".monaco-editor .selection": "border: 1px solid #67D0FF;",
+        // Set the color for glyph margin in the Monaco editor
+        // ".monaco-editor .glyph-margin": "border: 10px solid #67D0FF;",
+        // ".monaco-editor .line-numbers": "background-image: linear-gradient(135deg, #67D0FF 10%, #C45DFF 100%)",
+        // Hypothetical rule for highlighting the active line number background
     },
     // Set the font family for the debug console to JetBrains Mono
     "debug.console.fontFamily": "JetBrains Mono",
@@ -45,6 +46,10 @@
     "editor.colorDecorators": false,
     // Set the cursor style to a thin line
     "editor.cursorStyle": "line",
+    // Set the cursor blinking style
+    "editor.cursorBlinking": "phase",
+    // Controls whether the smooth caret animation should be enabled.
+    "editor.cursorSmoothCaretAnimation": "on",
     // Set the font family for the editor to JetBrains Mono
     "editor.fontFamily": "JetBrains Mono",
     // Enable font ligatures in the editor
@@ -53,8 +58,15 @@
     "editor.fontSize": 17,
     // Format the code on save
     "editor.formatOnSave": true,
-    // Disable the glyph margin in the editor
+    // format lenth of the line'
+    // "editor.rulers": [
+    //     180,
+    //     120
+    // ],
+    // Disable the glyph margin in the editor -- shows/hides breakpoints
     "editor.glyphMargin": false,
+    //Disable code folding in the editor
+    "editor.folding": true,
     // Set the behavior for multiple declarations, definitions, implementations, references, and type definitions to "goto"
     "editor.gotoLocation.multipleDeclarations": "goto",
     "editor.gotoLocation.multipleDefinitions": "goto",
@@ -76,7 +88,7 @@
     // Disable occurrences highlighting in the editor
     "editor.occurrencesHighlight": "off",
     // Disable line highlighting in the editor
-    "editor.renderLineHighlight": "none",
+    "editor.renderLineHighlight": "line",
     // Disable whitespace rendering in the editor
     "editor.renderWhitespace": "none",
     // Set the horizontal scrollbar size to 8
@@ -106,17 +118,17 @@
     // Set the font size for the terminal to 15
     "terminal.integrated.fontSize": 15,
     // Set the line height for the terminal to 1.85
-    "terminal.integrated.lineHeight": 1.85,
+    "terminal.integrated.lineHeight": 1.2,
     // Auto-detect the color scheme for the window
     "window.autoDetectColorScheme": true,
     // Inherit the new window dimensions
     "window.newWindowDimensions": "inherit",
     // Set the window title to the root name
-    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}",
+    "window.title": " ",
     // Set the window title bar style to native
     "window.titleBarStyle": "custom",
     // Set the color theme to GitHub Light Default
-    "workbench.colorTheme": "GitHub Light Default",
+    "workbench.colorTheme": "Default Dark+",
     // Disable editor preview
     "workbench.editor.enablePreview": false,
     // Reveal the editor if it's open
@@ -127,33 +139,50 @@
     "workbench.iconTheme": "symbols",
     // Enable horizontal scrolling in the list
     "workbench.list.horizontalScrolling": true,
-    // Set the preferred dark color theme to GitHub Dark Default
-    "workbench.preferredDarkColorTheme": "GitHub Dark Default",
     // Set the preferred light color theme to GitHub Light Default
     "workbench.preferredLightColorTheme": "GitHub Light Default",
     // Set the startup editor to none
     "workbench.startupEditor": "none",
-    // Hide the status bar
-    "workbench.statusBar.visible": false,
     // Disable tips
     "workbench.tips.enabled": false,
     // Set the tree indent to 16
     "workbench.tree.indent": 16,
     // Disable render indent guides in the tree
-    "workbench.tree.renderIndentGuides": "none",
+    "workbench.tree.renderIndentGuides": "onHover",
+    // Disable the command palette
     "window.commandCenter": false,
+    // Disable the layout control
     "workbench.layoutControl.enabled": false,
+    // Toggle the menu bar visibility
     "window.menuBarVisibility": "toggle",
+    // Hide the explorer arrows
     "symbols.hidesExplorerArrows": true,
+    // Move the editor actions to the title bar
     "workbench.editor.editorActionsLocation": "titleBar",
+    // Move the activity bar to the top
     "workbench.activityBar.location": "top",
+    // Set the editor backgrounds
     "background.editorBackgrounds": [
         "c:/Users/shubhsou/Downloads/peakpxa.jpg"
     ],
+    // Set the background blur
     "background.backgroundBlur": [
         "0",
         "5px",
         "0",
         "0"
-    ]
+    ],
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false,
+        "java": false
+    },
+    "workbench.productIconTheme": "el-vsc-v1-icons",
+    "http.proxySupport": "on",
+    "workbench.preferredDarkColorTheme": "Night Owl",
+    // "http.proxy": "http://genproxy.amdocs.com:8080",
+    "editor.stickyScroll.enabled": false,
+    "workbench.statusBar.visible": false,
 }
