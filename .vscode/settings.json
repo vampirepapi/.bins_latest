@@ -9,7 +9,7 @@
     "apc.stylesheet": {
         // Hide the decorations overview ruler
         ".decorationsOverviewRuler": "display: none;",
-        // Hide the title elements in the editor group container
+        // Hide the title elements in the editor group container - hide/show files title bar
         ".editor-group-container .title *": "display: none;",
         // Make the title elements in the editor group container non-clickable
         ".editor-group-container .title": "pointer-events: none;",
@@ -57,7 +57,7 @@
     // Set the font size for the editor to 15
     "editor.fontSize": 17,
     // Format the code on save
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     // format lenth of the line'
     // "editor.rulers": [
     //     180,
@@ -74,7 +74,7 @@
     "editor.gotoLocation.multipleReferences": "goto",
     "editor.gotoLocation.multipleTypeDefinitions": "goto",
     // Disable indentation guides in the editor
-    "editor.guides.indentation": false,
+    "editor.guides.indentation": true,
     // Hide the cursor in the overview ruler
     "editor.hideCursorInOverviewRuler": true,
     // Set the line height for the editor to 36
@@ -181,8 +181,10 @@
     },
     "workbench.productIconTheme": "el-vsc-v1-icons",
     "http.proxySupport": "on",
-    "workbench.preferredDarkColorTheme": "Night Owl",
+    "workbench.preferredDarkColorTheme": "Quiet Light",
     // "http.proxy": "http://genproxy.amdocs.com:8080",
     "editor.stickyScroll.enabled": false,
-    "workbench.statusBar.visible": false,
+    // Enable line nos in ZEN mode
+    "zenMode.hideLineNumbers": false,
+    "workbench.statusBar.visible": false
 }
